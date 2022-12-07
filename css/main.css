@@ -4,9 +4,12 @@
   margin: unset;
   padding: unset;
   box-sizing: border-box;
+  text-decoration: none !important;
+  list-style-type: none;
 }
 
 body {
+  width: 100%;
   background: linear-gradient(to right, rgb(255, 253, 253), rgb(235, 233, 233));
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -17,13 +20,13 @@ p {
 }
 
 header {
-  height: 70vh;
-  background: url("../images/bg-pattern-intro-desktop.svg"),
+  width: 100%;
+  height: 50vh;
+  background: url('../images/bg-pattern-intro-desktop.svg'),
     linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* object-fit: cover; */
   border-bottom-left-radius: 5rem;
 }
 
@@ -43,9 +46,19 @@ header {
 }
 
 main {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin: 3rem;
   color: hsl(0, 0%, 100%);
+}
+
+footer a {
+  width: 100%;
+  color: hsl(240, 2%, 79%);
+  line-height: 2.5rem !important;
 }
 
 main h1 {
@@ -61,6 +74,7 @@ main p {
   color: hsl(356, 100%, 66%);
   font-weight: 600;
 }
+
 .btn-outline {
   border: 1px solid #fff;
   margin-left: 2rem;
@@ -68,10 +82,17 @@ main p {
 }
 
 /* EDITOR SECTION */
+
+#editor {
+  overflow: hidden;
+  width: 100%;
+  padding: 6rem 0;
+}
+
 .image__container {
   bottom: 100px;
-  left: 110px;
-  width: 700px;
+  left: 40%;
+  width: 90%;
 }
 
 .image__container img {
@@ -82,7 +103,7 @@ main p {
 
 #art__description {
   width: 100%;
-  margin-top: 4rem;
+  margin-top: 2rem;
   height: 54vh;
   background: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
   background-repeat: no-repeat;
@@ -93,7 +114,8 @@ main p {
 }
 
 .description {
-  margin-left: 8rem !important;
+  margin-left: 11rem !important;
+  margin-right: unset;
   word-spacing: 0.2rem;
 }
 
@@ -108,16 +130,18 @@ main p {
 }
 
 /* LAPTOP SECTION */
+
 #laptop {
   margin-top: 5rem;
 }
+
 .laptop__container {
   right: 70%;
   width: 990px;
 }
 
 .laptop__container img {
-  width: 100%;
+  width: 90% !important;
 }
 
 .laptop__description {
@@ -129,8 +153,18 @@ main p {
 
 footer {
   width: 100%;
-  margin-top: 9rem;
+  margin-top: 8rem;
   height: 48vh;
   background: hsl(240, 10%, 16%);
   border-top-right-radius: 5rem;
+  font-size: 13px;
+  /* transition: all 1.3s; */
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13.5px;
+
+  transition: all 0.3s;
 }

@@ -16,19 +16,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
 
-    <title>[Blogr]</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <title>Blogr</title>
   </head>
 
   <body>
@@ -130,24 +118,26 @@
       </div>
 
       <main>
-        <h1 class="display-4">A modern publishing platform</h1>
-        <p>Grow your audience and build your online brand</p>
         <div>
-          <button class="btn btn-light rounded-pill px-4" type="button">
-            Start for Free
-          </button>
-          <button class="btn btn-outline rounded-pill px-4" type="button">
-            Learn More
-          </button>
+          <h1 class="display-4">A modern publishing platform</h1>
+          <p>Grow your audience and build your online brand</p>
+          <div>
+            <button class="btn btn-light rounded-pill px-4" type="button">
+              Start for Free
+            </button>
+            <button class="btn btn-outline rounded-pill px-4" type="button">
+              Learn More
+            </button>
+          </div>
         </div>
       </main>
     </header>
 
-    <section id="editor" class="py-5 my-5 container">
+    <section id="editor"">
       <h2 class="text-center">Designed for The Future</h2>
-      <div class="row">
-        <div class="col-6 py-5">
-          <div class="description py-5 ms-5" style="width: 60%">
+      <div class="row editor-inner">
+        <div class="col-6">
+          <div class="description py-5 " style="width: 70%">
             <div class="mb-5">
               <h3 class="fs-5 mb-3">Introducing an extensible editor</h3>
               <p>
@@ -170,7 +160,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-6 image-carrier">
           <div class="image__container position-relative">
             <img
               src="./images/illustration-editor-desktop.svg"
@@ -185,13 +175,6 @@
     <section id="art__description">
       <div class="row" style="height: 100%">
         <div class="col-6">
-          <!-- <div class="img__circles position-relative">
-            <img
-              src="./images/bg-pattern-circles.svg"
-              alt="circles__illustration"
-              class="position-absolute circles__illustration" width="110%"
-            />
-          </div> -->
           <div class="img__container position-relative">
             <img
               src="./images/illustration-phones.svg"
@@ -222,11 +205,12 @@
               src="./images/illustration-laptop-desktop.svg"
               alt="laptop__illustration"
               class="position-absolute"
+              style="width: 100%"
             />
           </div>
         </div>
         <div class="col-6 py-5">
-          <div class="laptop__description py-5 ms-5" style="width: 60%;">
+          <div class="laptop__description py-5 ms-5" style="width: 60%">
             <div class="mb-5">
               <h3 class="fs-3 mb-4">Free, open, simple</h3>
               <p>
@@ -251,21 +235,57 @@
       </div>
     </section>
 
+    <footer class="d-flex text-light">
+      <section
+        class="footer-align d-flex justify-content-center align-items-center"
+        style="width: 100%"
+      >
+        <div
+          id="inner-footer-section"
+          class="d-flex justify-content-between"
+          style="width: 70%"
+        >
+          <div class="align-items-stsrt">
+            <h2>Blogr</h2>
+          </div>
+          <div>
+            <div><h2>Product</h2></div>
+            <div>
+              <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Integrations</a></li>
+              </ul>
+            </div>
+          </div>
 
-    <footer>
-      
+          <div>
+            <div><h2>Company</h2></div>
+            <div>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div><h2>Connect</h2></div>
+            <div>
+              <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </footer>
-
-    <!-- 
-    
-      Product Overview Pricing
-    Marketplace Features Integrations Company About Team Blog Careers Connect
-    Contact Newsletter LinkedIn -->
-
-    <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
 
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.js"></script>
